@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.8.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.215624975",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -47,6 +47,13 @@
         "testCaseId": "d8c2abb4-4ce2-4500-b716-a085c4a67f0b",
         "testCaseType": "TestCase",
         "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "65be4c45-582e-4da5-8544-6396f58c1e74",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Journal Entry TC.xaml"
       }
     ],
     "saveToCloud": false

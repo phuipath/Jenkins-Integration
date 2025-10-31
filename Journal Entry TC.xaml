@@ -1,0 +1,316 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Journal_Entry_TC" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Journal_Entry_TC_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Journal_Entry_TC" sap:VirtualizedContainerService.HintSize="1272,3288" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="PostingDate" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="484,122" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="484,2843" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Home" sap:VirtualizedContainerService.HintSize="450,2751" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2510" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''unchecked''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="1446, 215, 188, 58" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl ui5-class='sap.ushell.ui.launchpad.AnchorItem' ui5p-title='Journal Entries' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.ushell.ui.launchpad.AnchorItem' ui5p-title='Journal Entries' tag='LI' type='' class='sapUshellAnchorItem' aaname='' check:innerText='Journal Entries' /&gt;" Guid="27c506a3-0817-4bcf-a38f-dba03cbcadf6" InformativeScreenshot="5028348a01c29032ef11543ef1d82090.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Manage Journal Entries''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="308, 294, 220, 220" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' ui5p-header='Manage Journal Entries' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' ui5p-header='Manage Journal Entries' tag='DIV' type='' class='sapMGT sapMGTStateLoaded sapMGTScopeDisplay OneByOne sapMPointer' aaname='' check:innerText='Manage Journal Entries' /&gt;" Guid="386ee99d-0818-424f-9db5-543763cdebff" InformativeScreenshot="3607e62a014f435004b1cdc5f0f2e0ec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''SAP.UI.CORE.ICON''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="1092, 343, 40, 30" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-vhi' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-vhi' tag='SPAN' type='' class='sapUiIcon sapUiIconMirrorInRTL sapUiIconPointer sapMInputBaseIcon' aaname='' /&gt;" Guid="6bf02c4f-6de4-4a7d-a150-f7933af8a896" InformativeScreenshot="d26364ab884f746dc93ad2b5d9eea7fc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NSelectItem DisplayName="Select Item ''containsContainscontains''" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="contains" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="10">
+                    <x:String>contains</x:String>
+                    <x:String>equal to</x:String>
+                    <x:String>between</x:String>
+                    <x:String>starts with</x:String>
+                    <x:String>ends with</x:String>
+                    <x:String>less than</x:String>
+                    <x:String>less than or equal to</x:String>
+                    <x:String>greater than</x:String>
+                    <x:String>greater than or equal to</x:String>
+                    <x:String>empty</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="982, 409, 198, 32" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl ui5-label='Operator:' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-label='Operator:' tag='DIV' type='' class='sapMSlt sapMSltDefault sapMSltMinWidth sapMSltHoverable sapMSltWithArrow' aaname='' /&gt;" Guid="299c01ce-963c-4f14-aa7e-f4e9b4cce98b" InformativeScreenshot="37d9e3f78a732ec32793ed3b656983df.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''SAP.M.INPUT __input16''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Text="1988" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="1200, 409, 526, 32" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl ui5-type='Input' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-type='Input' tag='DIV' type='' class='sapMInputBase sapMInputBaseHeightMargin sapMInput' aaname='' /&gt;" Guid="1005babd-a049-4a51-8710-e830b4cdf22b" InformativeScreenshot="a80a32b6bfd6385208e3c22469e2ca65.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''OK''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="1832, 1211, 44, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-valueHelpDialog-ok' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-valueHelpDialog-ok' tag='BUTTON' type='' class='sapMBtnBase sapMBtn sapMBtnInverted sapMBarChild' aaname='OK' check:innerText='OK' /&gt;" Guid="5b0849b1-cc93-4397-b99d-1bd4bbad2962" InformativeScreenshot="377f241bdd1846c76077b3376241ba97.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''GoGo''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="2447, 400, 42, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-btnGo' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-btnGo' tag='BUTTON' type='' class='sapMBtnBase sapMBtn sapMBtnInverted' aaname='Go' check:innerText='Go' /&gt;" Guid="fc950547-c614-42d0-87a8-39fa452f160b" InformativeScreenshot="47b9ebf27f2c74e2410e6de2bebe194a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''100001988''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="110, 585, 108, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--headerTable' /&gt;&lt;webctrl ui5-colLabel='Journal Entry' ui5-tableRow='0' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--headerTable' /&gt;&lt;webctrl ui5-colLabel='Journal Entry' ui5-tableRow='0' tag='A' type='' class='sapMLnk sapMLnkMaxWidth sapUiCompSmartLink' aaname='100001988' check:innerText='100001988' /&gt;" Guid="51f90091-7a7e-4377-94bf-e3a6f19cedf1" InformativeScreenshot="ea77c2f90a3a50fc8ed6c84df8b7eba3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''100001988''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="249, 494, 125, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Popover' /&gt;&lt;webctrl ui5-role='link' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Popover' /&gt;&lt;webctrl ui5-role='link' tag='A' type='' class='sapMLnk sapMLnkMaxWidth navigationPopoverTitle' aaname='100001988' check:innerText='100001988' /&gt;" Guid="ef8669cf-a7ee-4e65-a114-43d49fc7cc85" InformativeScreenshot="b6e3bb511c907134b699970e01108a41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text ''12/28/2023''" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" TextString="[PostingDate]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="350, 486, 88, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' ui5-class='sap.m.Text' ui5p-text='12/28/2023' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' ui5-class='sap.m.Text' ui5p-text='12/28/2023' type='' class='sapMText sapUiSelectable sapMTextBreakWord sapMTextMaxWidth sapUiCompSmartFieldValue' /&gt;" Guid="dc1e0837-9c1f-46c0-88d6-01ee0c9ad065" InformativeScreenshot="68b95001f9e688994c61eb8cbb36de35.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight '12282023'" sap:VirtualizedContainerService.HintSize="382,191" sap2010:WorkflowViewState.IdRef="NHighlight_1" ScopeIdentifier="1391b76a-8a05-4bf2-93df-9b713ca1c39e" Version="V4">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" ContentHash="w3wRXdsnTU2JdsVDHOxVug" DesignTimeRectangle="350, 486, 88, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' ui5-class='sap.m.Text' ui5p-text='12/28/2023' type='' class='sapMText sapUiSelectable sapMTextBreakWord sapMTextMaxWidth sapUiCompSmartFieldValue' aaname='12/28/2023' check:innerText='12/28/2023' /&gt;" Guid="6fdb5a4d-9ffa-4b3a-9000-152e31351cf0" ImageBase64="" InformativeScreenshot="4f219e6d885512425e6ea23946808ce8.png" Reference="85IS1mhzeEmNiMpvHo7Etg/p2d-9u64TU2bqAjh5enEUQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="89, 486, 246, 21" FullSelectorArgument="&lt;webctrl ui5-tooltip='Posting Date' /&gt;" Guid="602c16fc-f46d-4d8d-83ed-4b6dd7bd7eef" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="3831, -9, 2578, 1398" BrowserType="Chrome" ContentHash="qA_x0nDJ-USMrXTUBLn33A" IconBase64="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" InformativeScreenshot="23be5a7317a1ac8001d2e0487c4cd6fe.jpg" Reference="85IS1mhzeEmNiMpvHo7Etg/9lAyeP_XekmOHCsncNdKAg" Selector="&lt;html app='chrome.exe' title='Home' /&gt;" Title="Home" Url="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#Shell-home" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="484,300" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,217" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[PostingDate]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">["2023"]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+  </Sequence>
+</Activity>

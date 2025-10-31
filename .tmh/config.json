@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://staging.uipath.com/uibank/automationcoe/testmanager_",
+  "defaultProject": {
+    "id": "aff5a971-3c74-0000-2a81-0b471f7c0aee",
+    "name": "PH_Public Sector Demo",
+    "key": "PHPUB"
+  }
 }

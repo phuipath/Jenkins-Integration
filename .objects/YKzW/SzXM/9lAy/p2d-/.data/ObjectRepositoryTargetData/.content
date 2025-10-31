@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="w3wRXdsnTU2JdsVDHOxVug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="vhcals4hci.dummy.nodomain/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html" DesignTimeRectangle="350, 486, 88, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' ui5-class='sap.m.Text' ui5p-text='12/28/2023' type='' class='sapMText sapUiSelectable sapMTextBreakWord sapMTextMaxWidth sapUiCompSmartFieldValue' aaname='12/28/2023' check:innerText='12/28/2023' /&gt;" Guid="6fdb5a4d-9ffa-4b3a-9000-152e31351cf0" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="89, 486, 246, 21" FullSelectorArgument="&lt;webctrl ui5-tooltip='Posting Date' /&gt;" Guid="602c16fc-f46d-4d8d-83ed-4b6dd7bd7eef" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4f219e6d885512425e6ea23946808ce8.png" xmlns="">0FK4RAAv2qEKser_Bz_4xjQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Highlight</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
