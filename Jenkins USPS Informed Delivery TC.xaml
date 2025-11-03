@@ -1,0 +1,409 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Jenkins_USPS_Informed_Delivery_TC" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Jenkins_USPS_Informed_Delivery_TC_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Testing</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Jenkins_USPS_Informed_Delivery_TC" sap:VirtualizedContainerService.HintSize="1262,3439" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ErMsg" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="484,122" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="484,2994" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Welcome  USPS" sap:VirtualizedContainerService.HintSize="450,2902" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="245e90e3-3311-46e1-8a67-255949389bd2" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2661" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Informed Delivery®''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="usps.com" DesignTimeRectangle="1788, 878, 203, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Informed Delivery®' class='button--link' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Informed Delivery®' class='button--link' tag='A' type='' check:innerText='Informed Delivery®' /&gt;" Guid="76ac4277-5652-4ffb-8495-c1e92e4aa112" InformativeScreenshot="bcb3fa761a0cc4e267eae699d89f0a22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome | USPS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Sign Up for Free''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="usps.com/manage/informed-delivery.htm" DesignTimeRectangle="586, 680, 205, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='button--primary' parentid='1547960993753' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='button--primary' parentid='1547960993753' tag='A' type='' aaname='Sign Up for Free' check:innerText='Sign Up for Free' /&gt;" Guid="b826bffd-37c3-40c4-9f06-2a3fb28f2f02" InformativeScreenshot="5a80868769c1d4961bf17c8add45de23.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Informed Delivery - Mail &amp;amp; Package Notifications | USPS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="586, 680, 344, 72" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' parentid='1547960993753' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='1547960993753' tag='P' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Sign Up for Free Sign In' /&gt;" Guid="df99d1ff-989d-437c-b1f1-b15657edb112" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Email Address''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Text="Ted@Excellent.Adv" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/informeddelivery/welcome" DesignTimeRectangle="1024, 634, 510, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='temail' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='temail' tag='INPUT' type='text' class='form-control form-control-lg' placeholder='Email Address' aaname=' Email Address' /&gt;" Guid="1e1b68c9-6319-4ef8-8079-0a5231998818" InformativeScreenshot="bcb09865c374b838958c20c7153ba841.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Sign In or Sign Up' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="1024, 601, 97, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-temail' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-temail' tag='LABEL' type='' class='form-label usps-label' aaname=' Email Address' check:innerText='Email Address' /&gt;" Guid="7face3ea-139a-4451-8cb7-89c35d2ef940" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Continue''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/informeddelivery/welcome" DesignTimeRectangle="1024, 736, 510, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-submit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-submit' tag='INPUT' type='submit' class='btn btn-primary' aaname='Continue' check:text='Continue' /&gt;" Guid="3e2b2539-aea4-449c-a870-3866ba034064" InformativeScreenshot="1113b5beb6c5ee304e34049e0c84af1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Sign In or Sign Up' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" ContentHash="JhX6f8-84EK6qwlexTLLjg" DesignTimeRectangle="978, 431, 20, 20" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl id='rAccount1' tag='INPUT' type='radio' class='form-check-input' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Personal Account &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;I would like to track and manage mail at my residential address. &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="e9eff4e9-25ff-4a3a-b35b-925bef5e90d8" InformativeScreenshot="5cc32a2c70fae30cbe0d60a323e4e7fc.png" Reference="85IS1mhzeEmNiMpvHo7Etg/VZcjpnr5pkeVaz4O1tYiNQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Account Type' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="1018, 426, 508, 66" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='for-rAccount1' tag='LABEL' type='' class='form-check-label ms-2' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Personal Account&amp;#xA;I would like to track and manage mail at my residential address.' /&gt;" Guid="3b0ba715-e311-4f8e-bd10-f20df8068df8" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Continue''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="957, 1002, 645, 57" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='btn-account-type-submit' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-account-type-submit' tag='A' type='' class='btn btn-primary' aaname='Continue' check:innerText='Continue' /&gt;" Guid="693f4a67-f3f9-41eb-9c55-0d3e396e7f4c" InformativeScreenshot="909aa644703ff583d61a56a339f03e49.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Account Type' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Address Line 1 *''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Text="1313 Mockingbird Ln" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="890, 638, 780, 53" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='taddress' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='taddress' tag='INPUT' type='text' class='form-control form-control-lg ui-autocomplete-input' placeholder='Address Line 1' aaname='Address Line 1 *' /&gt;" Guid="ce67f536-b2f6-4d09-bb23-0cded2ba7f7a" InformativeScreenshot="bc472b4b4462a8ad4773238481ec8191.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="890, 605, 108, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-taddress' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-taddress' tag='LABEL' type='' class='form-label usps-label' aaname='Address Line 1 ' check:innerText='Address Line 1 *' /&gt;" Guid="07b24729-bbe8-4836-b14d-4a7ee28c82f3" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''City *''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,288" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Text="Honolulu" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="890, 858, 375, 53" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='tcity' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tcity' tag='INPUT' type='text' class='form-control form-control-lg ui-autocomplete-input' placeholder='City' aaname='City *' /&gt;" Guid="2bb41f2e-12fe-4f20-bea1-32b0d6306620" InformativeScreenshot="66953915ef0577ea7bd8d26161a09f9e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="890, 826, 34, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-tcity' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-tcity' tag='LABEL' type='' class='form-label usps-label' aaname='City ' check:innerText='City *' /&gt;" Guid="e1072f5c-03d5-43b6-b666-9151ee5e7de2" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NSelectItem DisplayName="Select Item ''State *''" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="HI - Hawaii" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="63">
+                    <x:String>Select State</x:String>
+                    <x:String>AL - Alabama</x:String>
+                    <x:String>AK - Alaska</x:String>
+                    <x:String>AS - American Samoa</x:String>
+                    <x:String>AZ - Arizona</x:String>
+                    <x:String>AR - Arkansas</x:String>
+                    <x:String>CA - California</x:String>
+                    <x:String>CO - Colorado</x:String>
+                    <x:String>CT - Connecticut</x:String>
+                    <x:String>DE - Delaware</x:String>
+                    <x:String>DC - District of Columbia</x:String>
+                    <x:String>FM - Federated States of Micronesia</x:String>
+                    <x:String>FL - Florida</x:String>
+                    <x:String>GA - Georgia</x:String>
+                    <x:String>GU - Guam</x:String>
+                    <x:String>HI - Hawaii</x:String>
+                    <x:String>ID - Idaho</x:String>
+                    <x:String>IL - Illinois</x:String>
+                    <x:String>IN - Indiana</x:String>
+                    <x:String>IA - Iowa</x:String>
+                    <x:String>KS - Kansas</x:String>
+                    <x:String>KY - Kentucky</x:String>
+                    <x:String>LA - Louisiana</x:String>
+                    <x:String>ME - Maine</x:String>
+                    <x:String>MH - Marshall Islands</x:String>
+                    <x:String>MD - Maryland</x:String>
+                    <x:String>MA - Massachusetts</x:String>
+                    <x:String>MI - Michigan</x:String>
+                    <x:String>MN - Minnesota</x:String>
+                    <x:String>MS - Mississippi</x:String>
+                    <x:String>MO - Missouri</x:String>
+                    <x:String>MT - Montana</x:String>
+                    <x:String>NE - Nebraska</x:String>
+                    <x:String>NV - Nevada</x:String>
+                    <x:String>NH - New Hampshire</x:String>
+                    <x:String>NJ - New Jersey</x:String>
+                    <x:String>NM - New Mexico</x:String>
+                    <x:String>NY - New York</x:String>
+                    <x:String>NC - North Carolina</x:String>
+                    <x:String>ND - North Dakota</x:String>
+                    <x:String>MP - Northern Mariana Islands</x:String>
+                    <x:String>OH - Ohio</x:String>
+                    <x:String>OK - Oklahoma</x:String>
+                    <x:String>OR - Oregon</x:String>
+                    <x:String>PW - Palau</x:String>
+                    <x:String>PA - Pennsylvania</x:String>
+                    <x:String>PR - Puerto Rico</x:String>
+                    <x:String>RI - Rhode Island</x:String>
+                    <x:String>SC - South Carolina</x:String>
+                    <x:String>SD - South Dakota</x:String>
+                    <x:String>TN - Tennessee</x:String>
+                    <x:String>TX - Texas</x:String>
+                    <x:String>UT - Utah</x:String>
+                    <x:String>VT - Vermont</x:String>
+                    <x:String>VI - Virgin Islands</x:String>
+                    <x:String>VA - Virginia</x:String>
+                    <x:String>WA - Washington</x:String>
+                    <x:String>WV - West Virginia</x:String>
+                    <x:String>WI - Wisconsin</x:String>
+                    <x:String>WY - Wyoming</x:String>
+                    <x:String>AA - Armed Forces Americas</x:String>
+                    <x:String>AE - Armed Forces Europe</x:String>
+                    <x:String>AP - Armed Forces Pacific</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="1295, 858, 375, 53" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='sstate' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sstate' tag='SELECT' type='' class='form-select form-control-lg' aaname='State *' /&gt;" Guid="4d86e2f8-d71c-4ea9-99ec-1fadc638c35b" InformativeScreenshot="b5182b138b84bc5d2ff461d780f2626a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="1295, 826, 43, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-sstate' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-sstate' tag='LABEL' type='' class='form-label usps-label' aaname='State ' check:innerText='State *' /&gt;" Guid="35340607-4b8a-495f-ad95-2fe789f8599c" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Search Address''" sap:VirtualizedContainerService.HintSize="382,227" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="890, 1061, 375, 57" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='a-address-step1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='a-address-step1' tag='A' type='' class='btn btn-primary' aaname='Search Address' check:innerText='Search Address' /&gt;" Guid="66188dfc-5de1-4063-ba0e-11617029cb49" InformativeScreenshot="1daaae1d76624437cfb0a843c33a1a77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text ''The address you provide…''" sap:VirtualizedContainerService.HintSize="382,183" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="245e90e3-3311-46e1-8a67-255949389bd2" TextString="[ErMsg]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="755, 495, 1049, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='not-found' parentid='addressHolderStep2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='not-found' parentid='addressHolderStep2' tag='DIV' type='' /&gt;" Guid="e2cc8638-16dd-47c0-9549-e3a8ff2f176e" InformativeScreenshot="32c592b11bde117126a37a09633e3391.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="3831, -9, 2578, 1398" BrowserType="Chrome" ContentHash="G-uhYD5kvkmpoCPKWU6e2g" IconBase64="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" InformativeScreenshot="cc571489067ae65b8fbc069406490ab1.jpg" Reference="85IS1mhzeEmNiMpvHo7Etg/UK0e8qdDlUmmq5OTLoQikQ" Selector="&lt;html app='chrome.exe' title='Welcome | USPS' /&gt;" Title="Welcome | USPS" Url="https://www.usps.com/" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="484,300" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,217" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[ErMsg]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">["not found"]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+  </Sequence>
+</Activity>

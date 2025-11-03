@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.8.0",
-  "projectVersion": "1.0.215624975",
+  "projectVersion": "1.0.215887536",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -54,6 +54,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Journal Entry TC.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e879e070-409d-4eef-a22c-6fcee3da0f69",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Jenkins USPS Informed Delivery TC.xaml"
       }
     ],
     "saveToCloud": false

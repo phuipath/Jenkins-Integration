@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Welcome  USPS",
+  "Type": "Screen",
+  "Id": "UK0e8qdDlUmmq5OTLoQikQ",
+  "Reference": "85IS1mhzeEmNiMpvHo7Etg/UK0e8qdDlUmmq5OTLoQikQ",
+  "ParentRef": "85IS1mhzeEmNiMpvHo7Etg/ln_-VO5Q5kGwtkC6U2UWyw",
+  "Created": "2025-11-03T16:43:15.7549393Z",
+  "Updated": "2025-11-03T16:43:15.7549393Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
