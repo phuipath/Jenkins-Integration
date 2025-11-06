@@ -153,7 +153,7 @@
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="usps.com/manage/informed-delivery.htm" DesignTimeRectangle="586, 680, 205, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='button--primary' parentid='1547960993753' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='button--primary' parentid='1547960993753' tag='A' type='' aaname='Sign Up for Free' check:innerText='Sign Up for Free' /&gt;" Guid="b826bffd-37c3-40c4-9f06-2a3fb28f2f02" InformativeScreenshot="5a80868769c1d4961bf17c8add45de23.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Informed Delivery - Mail &amp;amp; Package Notifications | USPS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="586, 680, 344, 72" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' parentid='1547960993753' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='1547960993753' tag='P' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Sign Up for Free Sign In' /&gt;" Guid="df99d1ff-989d-437c-b1f1-b15657edb112" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -174,7 +174,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="reg.usps.com/informeddelivery/welcome" DesignTimeRectangle="1024, 634, 510, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='temail' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='temail' tag='INPUT' type='text' class='form-control form-control-lg' placeholder='Email Address' aaname=' Email Address' /&gt;" Guid="1e1b68c9-6319-4ef8-8079-0a5231998818" InformativeScreenshot="bcb09865c374b838958c20c7153ba841.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Sign In or Sign Up' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="1024, 601, 97, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-temail' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-temail' tag='LABEL' type='' class='form-label usps-label' aaname=' Email Address' check:innerText='Email Address' /&gt;" Guid="7face3ea-139a-4451-8cb7-89c35d2ef940" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -210,7 +210,7 @@
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" ContentHash="JhX6f8-84EK6qwlexTLLjg" DesignTimeRectangle="978, 431, 20, 20" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl id='rAccount1' tag='INPUT' type='radio' class='form-check-input' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Personal Account &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;I would like to track and manage mail at my residential address. &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="e9eff4e9-25ff-4a3a-b35b-925bef5e90d8" InformativeScreenshot="5cc32a2c70fae30cbe0d60a323e4e7fc.png" Reference="85IS1mhzeEmNiMpvHo7Etg/VZcjpnr5pkeVaz4O1tYiNQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Account Type' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="1018, 426, 508, 66" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='for-rAccount1' tag='LABEL' type='' class='form-check-label ms-2' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Personal Account&amp;#xA;I would like to track and manage mail at my residential address.' /&gt;" Guid="3b0ba715-e311-4f8e-bd10-f20df8068df8" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -246,7 +246,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="890, 638, 780, 53" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='taddress' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='taddress' tag='INPUT' type='text' class='form-control form-control-lg ui-autocomplete-input' placeholder='Address Line 1' aaname='Address Line 1 *' /&gt;" Guid="ce67f536-b2f6-4d09-bb23-0cded2ba7f7a" InformativeScreenshot="bc472b4b4462a8ad4773238481ec8191.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="890, 605, 108, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-taddress' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-taddress' tag='LABEL' type='' class='form-label usps-label' aaname='Address Line 1 ' check:innerText='Address Line 1 *' /&gt;" Guid="07b24729-bbe8-4836-b14d-4a7ee28c82f3" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -267,7 +267,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="890, 858, 375, 53" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='tcity' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tcity' tag='INPUT' type='text' class='form-control form-control-lg ui-autocomplete-input' placeholder='City' aaname='City *' /&gt;" Guid="2bb41f2e-12fe-4f20-bea1-32b0d6306620" InformativeScreenshot="66953915ef0577ea7bd8d26161a09f9e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="890, 826, 34, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-tcity' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-tcity' tag='LABEL' type='' class='form-label usps-label' aaname='City ' check:innerText='City *' /&gt;" Guid="e1072f5c-03d5-43b6-b666-9151ee5e7de2" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -355,7 +355,7 @@
                 <uix:NSelectItem.Target>
                   <uix:TargetAnchorable BrowserURL="reg.usps.com/entreg/InformedDeliveryRegistrationAction_input" DesignTimeRectangle="1295, 858, 375, 53" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='sstate' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sstate' tag='SELECT' type='' class='form-select form-control-lg' aaname='State *' /&gt;" Guid="4d86e2f8-d71c-4ea9-99ec-1fadc638c35b" InformativeScreenshot="b5182b138b84bc5d2ff461d780f2626a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='USPS.com® - Create Account - Address Eligibility' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="1295, 826, 43, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl id='for-sstate' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='for-sstate' tag='LABEL' type='' class='form-label usps-label' aaname='State ' check:innerText='State *' /&gt;" Guid="35340607-4b8a-495f-ad95-2fe789f8599c" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -396,7 +396,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,217" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="416,217" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
         <uta:VerifyExpressionWithOperator.FirstExpression>
           <InArgument x:TypeArguments="x:String">[ErMsg]</InArgument>
         </uta:VerifyExpressionWithOperator.FirstExpression>
