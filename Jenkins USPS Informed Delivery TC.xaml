@@ -100,7 +100,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Jenkins_USPS_Informed_Delivery_TC" sap:VirtualizedContainerService.HintSize="1262,3439" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Jenkins_USPS_Informed_Delivery_TC" sap:VirtualizedContainerService.HintSize="1262,3470" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ErMsg" />
     </Sequence.Variables>
@@ -116,7 +116,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="... When" sap:VirtualizedContainerService.HintSize="484,2993" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap2010:Annotation.AnnotationText="Adding a comment" DisplayName="... When" sap:VirtualizedContainerService.HintSize="484,3025" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
